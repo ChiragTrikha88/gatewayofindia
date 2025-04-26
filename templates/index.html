@@ -1,21 +1,25 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Gateway of India</title>
+    <title>Gateway of India Grocery Store</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-
 <body>
     <h1>Welcome to Gateway of India Grocery Store</h1>
-    <p>Select from our featured products below:</p>
-    <form action="/cart" method="post">
-        <label><input type="checkbox" name="items" value="Basmati Rice"> Basmati Rice - €5.00</label><br>
-        <label><input type="checkbox" name="items" value="Maggi Noodles"> Maggi Noodles - €1.50</label><br>
-        <label><input type="checkbox" name="items" value="Amul Butter"> Amul Butter - €3.00</label><br>
-        <input type="submit" value="Add to Cart">
-    </form>
-    <p><a href="/about">About Us</a> | <a href="/careers">Careers</a> | <a href="/events">Events</a></p>
+
+    <div class="products">
+        <p>Select from our featured products below:</p>
+        <label><input type="checkbox"> Basmati Rice - €5.00</label>
+        <label><input type="checkbox"> Maggi Noodles - €1.50</label>
+        <label><input type="checkbox"> Amul Butter - €3.00</label>
+        <button>Add to Cart</button>
+    </div>
+
+    <nav>
+        <a href="/about">About Us</a> |
+        <a href="/careers">Careers</a> |
+        <a href="/events">Events</a>
+    </nav>
 </body>
 </html>
