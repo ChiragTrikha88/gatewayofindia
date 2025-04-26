@@ -1,6 +1,7 @@
-# Flask app main file
-from flask import Flask
+from flask import Flask, render_template
+
 app = Flask(__name__)
+
 @app.route('/')
 def home():
-    return 'Gateway of India - Grocery Store'
+    return render_template('index.html')
